@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Downloaded images
+*/*.jpg
+*/*.jpeg
+*/*.png
+
+# Environment
+.env
+.venv
+env/
+venv/
