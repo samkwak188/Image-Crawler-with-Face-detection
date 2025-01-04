@@ -1,6 +1,6 @@
 # Google Image Crawler
 
-A Python script that downloads portrait-oriented images from Google Images based on given keywords using Requests library. The script supports multiple languages including Korean. I wrote this simple image crawling code as my of my Machine Learning Project, and that is why i used pillow to convert all images to black and white by default, so that it would be more accurate when I train my ML model. 
+Hi, this is a simple Python script that downloads portrait-oriented images from Google Images based on given keywords using Requests library. The script supports multiple languages including Korean. I wrote this simple image crawling code as my of my Machine Learning Project, and that is why i used pillow to convert all images to black and white by default, so that it would be more accurate when I train my ML model. 
 
 ## Features
 
