@@ -6,7 +6,7 @@ A Python script that downloads portrait-oriented images from Google Images based
 
 - 🔍 Multi-keyword search support
 - 🖼️ Portrait-oriented image filtering (aspect ratio 1:1 to 1:1.3)
-- 🌐 Korean language support
+- 🌐 language support : Keyword can be in both English and Korean
 - ⚫️ Automatic black and white conversion
 - 📏 Minimum size requirements for quality control
 - 🚫 Duplicate image detection
@@ -27,12 +27,14 @@ A Python script that downloads portrait-oriented images from Google Images based
    - Uses custom headers to mimic browser behavior
    - Implements timeout handling (30s for search, 10s for downloads)
 
-3. **Image Filtering**
-   - Checks image dimensions
-   - Ensures portrait orientation (height/width ratio between 1 and 1.3)
-   - Requires minimum size (default: At least500x500 pixels)
+3. **Face Detection**(Updated)
+   - Uses OpenCV's Haar Cascade Classifier for face detection
 
-4. **Image Processing**
+4. **Image Filtering**
+   - Checks image dimensions
+   - Requires minimum size (default: At least 100x100 pixels)
+
+5. **Image Processing**
    - Converts images to black and white
    - Saves in original format (typically JPEG)
 
@@ -55,7 +57,10 @@ The script includes:
 
 - Subject to Google's rate limiting
 - Image quality depends on source
-- Some images that looks better than othersmight be skipped due to size/ratio requirements
 - Images scraped sometimes contains watermarks, or even not really related to the keyword.
+- Face detection is not 100% accurate, so scraped images sometimes include body parts rather than the whole face, like shoulders, chest, ears, or eyes.
+
+## Updates
+- 2025-01-03 : Added face detection and image filtering, and removed portrait ratio requirement.
 
 "# Image-Crawler-" 
