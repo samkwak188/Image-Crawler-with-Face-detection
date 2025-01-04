@@ -27,7 +27,7 @@ A Python script that downloads portrait-oriented images from Google Images based
    - Uses custom headers to mimic browser behavior
    - Implements timeout handling (30s for search, 10s for downloads)
 
-3. **Face Detection**(Updated)
+3. **Face Detection**
    - Uses OpenCV's Haar Cascade Classifier for face detection
 
 4. **Image Filtering**
@@ -60,7 +60,4 @@ The script includes:
 - Images scraped sometimes contains watermarks, or even not really related to the keyword.
 - Face detection is not 100% accurate, so scraped images sometimes include body parts rather than the whole face, like shoulders, chest, ears, or eyes.
 
-## Updates
-- 2025-01-03 : Added face detection and image filtering, and removed portrait ratio requirement.
-
-"# Image-Crawler-" 
+"# Image-Crawler-with-Face-detection" 
